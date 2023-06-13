@@ -2,6 +2,15 @@
 #fghjk
 #gfxchvbjdscdhjs
 #download fastq from sra
+# create conda environment
+conda create -n practice_2
+# activate conda environment
+conda activate practice_2
+# install sra-tools
+conda install -c bioconda sra-tools
+# Install dependencies
+conda install -c bioconda bwa samtools bcftools
+# download a fastq file from sra
 fastq-dump --split-files SRR390728
 # download fasta from ncbi
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.38_GRCh38.p12/GCF_000001405.38_GRCh38.p12_genomic.fna.gz
